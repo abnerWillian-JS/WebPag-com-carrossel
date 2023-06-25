@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Open+Sans:wght@300;400;500;700&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Gruppo', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+}
+
+hr {
+    width: 40%;
+    margin: auto;
+}
+
+#main {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(53, 54, 54);
+}
+
+header {
+    padding: 1.5em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+#perfil {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.container-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.gap {
+    display: none;
+}
+
+.square {
+    display: block;
+    animation: go-next 1s;
+}
+
+.gap img {
+    margin: 40px;
+}
+
+section img:hover {
+    transform: scale(1.1, 1.2);
+
+}
+
+button {
+    border: solid 1px white;
+    padding: 15px;
+    color: #fff;
+    background-color: #141414;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button {
+    text-align: center;
+}
+
+button:active {
+    background-color: rgb(39, 39, 39);
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 20px;
+}
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+@media screen and (max-width:1100px) {
+    img {
+        height: 200px;
+        width: 100px;
+    }
+
+    body {
+        background-color: rgb(53, 54, 54);
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .squares img:hover {
+        height: 230px;
+        width: 115px;
+    }
+
+    .square {
+        text-align: center;
+    }
+
+    .container-images {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes go-next {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
